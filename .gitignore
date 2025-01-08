@@ -1,0 +1,33 @@
+# Ignore IDE-specific files
+.idea/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Java compiled files
+*.class
+*.jar
+*.war
+
+# Ignore Docker-related files (optional, if not needed in version control)
+*.env
+.dockerignore
+
+# Ignore Kubernetes-related files (optional, if generated dynamically)
+*.yaml~
+*.yml~
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Jenkins workspace and build artifacts
+workspace/
+build/
+target/

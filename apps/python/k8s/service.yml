@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-app
+spec:
+  selector:
+    app: python-app
+  ports:
+    - protocol: TCP
+      port: 80        # Service port to expose the application inside the cluster
+      targetPort: 8080 # Port used by the application container
+      nodePort: 31001 # Unique port for external access
+  type: NodePort
