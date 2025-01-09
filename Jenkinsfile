@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'APP_NAME', defaultValue: 'python-app', description: 'Name of the application to build and deploy')
+        string(name: 'APP_NAME', defaultValue: 'python', description: 'Name of the application to build and deploy')
     }
     environment {
         REGISTRY = 'localhost:5000'
